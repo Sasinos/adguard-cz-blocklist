@@ -1,0 +1,256 @@
+! Title: Pablo CZ AdBlock — vlastní český blocklist (Ads only)
+! Description: DNS-level blokace českých a slovenských reklamních sítí (POUZE ADS, bez analytics/tracking)
+! Homepage: -
+! Last modified: 2026-05-17
+! Version: 2.0
+! Expires: 1 day
+! License: CC-BY-SA 4.0
+! Format: AdGuard / Adblock Plus syntax
+! Maintainer: Pablo (homelab)
+!
+! ====================================================================
+! PROFIL: Jen reklamy / Vyvážený / Vše blokovat včetně Seznam.cz
+! ====================================================================
+! - POKRÝVÁ:    CZ/SK ad networks, RTB, banner delivery, native ads
+! - NEPOKRÝVÁ:  analytics, tracking, statistics (řeší OISD/Hagezi)
+! - DOPLNĚK:    OISD Big + Hagezi Pro + AdGuard DNS filter
+! ====================================================================
+!
+! ====================================================================
+! 1. SKLIK / SEZNAM AD NETWORK (kompletní blokace)
+! ====================================================================
+! Hlavní reklamní platforma Seznam.cz (3000+ partnerských webů)
+||imedia.cz^
+||c.imedia.cz^
+||i.imedia.cz^
+||s.imedia.cz^
+||rtb.imedia.cz^
+||ssp.imedia.cz^
+||sssp.imedia.cz^
+||h.imedia.cz^
+||r.imedia.cz^
+||im.cz^
+||1.im.cz^
+||10.im.cz^
+||sklik.cz^
+||ssp.seznam.cz^
+||static-rtb.seznam.cz^
+||reklama.seznam.cz^
+||partner.seznam.cz^
+||onegar.seznam.cz^
+||ogar.seznam.cz^
+!
+! ====================================================================
+! 2. ETARGET (CZ/SK PPC síť — Aktuality.sk, iDnes partner)
+! ====================================================================
+||etarget.cz^
+||etarget.com^
+||etarget.net^
+||etarget.eu^
+||etarget.sk^
+||etargetnet.com^
+||code.etarget.cz^
+||code.etarget.sk^
+||delivery.etarget.com^
+!
+! ====================================================================
+! 3. R2B2 (programmatic advertising, monetizace publisherů)
+! ====================================================================
+||r2b2.cz^
+||r2b2.io^
+||cz.r2b2.cz^
+||static.r2b2.cz^
+||ssp.r2b2.cz^
+||pix.r2b2.cz^
+||ad.r2b2.cz^
+||delivery.r2b2.cz^
+!
+! ====================================================================
+! 4. MAFRA / IDNES (iDnes.cz, Lidovky.cz, Reflex.cz, Metro)
+! ====================================================================
+||gidnes.cz^
+||g.idnes.cz^
+||topkontakt.cz^
+||topkontakt.idnes.cz^
+||idnes.bbelements.com^
+||go.idnes.bbelements.com^
+||cnc.bbelements.com^
+||bbelements.com^
+||mafraregio.cz^
+||adgenerator.idnes.cz^
+||ad.idnes.cz^
+||advert.idnes.cz^
+!
+! ====================================================================
+! 5. CZECH NEWS CENTER (Blesk, Aha!, Reflex, Auto Bild)
+! ====================================================================
+||ads.cncenter.cz^
+||cnc-ads.bbelements.com^
+||cncads.cncenter.cz^
+||advert.cncenter.cz^
+||ad.cncenter.cz^
+!
+! ====================================================================
+! 6. NATIVE ADVERTISING CZ
+! ====================================================================
+! TOPtext (textová reklama)
+||toptext.cz^
+||t.toptext.cz^
+!
+! Lookit (kontextová textová reklama)
+||lookit.cz^
+||l.lookit.cz^
+!
+! ====================================================================
+! 7. BANNER DELIVERY / DISPLAY ADS
+! ====================================================================
+! iBillboard (HTML5 banner serving — populární v CZ)
+||ibillboard.com^
+||ibillboard.net^
+||cz.ibillboard.com^
+||sk.ibillboard.com^
+||ad.ibillboard.com^
+||rtb.ibillboard.com^
+||delivery.ibillboard.com^
+||creatives.ibillboard.com^
+!
+! billboard.nuggad.net (audience targeted banners)
+||billboard.nuggad.net^
+||nuggad.net^
+!
+! ====================================================================
+! 8. ADFORM (DK adtech, dominantní CZ display ads)
+! ====================================================================
+||adform.net^
+||adform.com^
+||serve.adform.net^
+||a1.adform.net^
+||a2.adform.net^
+||s1.adform.net^
+||s2.adform.net^
+||cdn1.adform.net^
+||cdn2.adform.net^
+||cdn3.adform.net^
+||adformdsp.net^
+!
+! ====================================================================
+! 9. SMARTADSERVER (FR adtech, populární v CZ médiích)
+! ====================================================================
+||smartadserver.com^
+||sas.smartadserver.com^
+||www6.smartadserver.com^
+||www8.smartadserver.com^
+||diff.smartadserver.com^
+||smart-ad.com^
+!
+! ====================================================================
+! 10. OSTATNÍ CZ AD NETWORKS
+! ====================================================================
+! Centrum / Atlas
+||advert.centrum.cz^
+||ads.centrum.cz^
+||click.centrum.cz^
+||reklama.centrum.cz^
+!
+! Nova / TV Nova
+||ads.nova.cz^
+||advert.nova.cz^
+||reklama.nova.cz^
+!
+! Aktuálně.cz / Economia (Hospodářské noviny, IHNED.cz)
+||ads.aktualne.cz^
+||advert.aktualne.cz^
+||ads.economia.ihned.cz^
+||advert.ihned.cz^
+||reklama.aktualne.cz^
+!
+! Stream.cz
+||flash.stream.cz/get_sklik^
+||ads.stream.cz^
+||reklama.stream.cz^
+!
+! Legacy CZ ad domains (stále aktivní na některých webech)
+||kbmg.cz^
+||mf.advantage.as^
+||advantage.as^
+||kontera.com^
+||geewa.ws^
+||ads.geewa.com^
+!
+! ====================================================================
+! 11. ULOŽ.TO / SHARING SITES ADS
+! ====================================================================
+||uloz.to/bannery^
+||uloz.to/img/bannery^
+||click.uloz.to^
+||ads.uloz.to^
+!
+! ====================================================================
+! 12. RTB / PROGRAMMATIC (CZ-specific)
+! ====================================================================
+||rtb.cz^
+||openrtb.cz^
+||prg.adition.com^
+||adition.com^
+||rtbhouse.com^
+||eu.rtbhouse.com^
+!
+! ====================================================================
+! 13. AFFILIATE REKLAMA (banners, ne click trackery)
+! ====================================================================
+! Heureka — pouze reklamní subdomény
+||ad.heureka.cz^
+||ssp.heureka.cz^
+!
+! Affilbox / dognet — banner servery
+||banner.affilbox.cz^
+||banner.dognet.cz^
+!
+! ====================================================================
+! 14. PUSH NOTIFICATION ADS (vyvážený = jen nejhorší)
+! ====================================================================
+! Pouze známé spam push notification sítě
+||propellerads.com^
+||onclickads.net^
+||propu.sh^
+||proeradservice.com^
+!
+! ====================================================================
+! 15. WHITELIST / EXCEPTIONS — pouze esenciální
+! ====================================================================
+! Trading platformy (kritické)
+@@||tastytrade.com^
+@@||tastyworks.com^
+@@||tastylive.com^
+@@||interactivebrokers.com^
+@@||interactivebrokers.co.uk^
+@@||ibkr.com^
+@@||tradingview.com^
+@@||cmegroup.com^
+@@||cboe.com^
+@@||dxfeed.com^
+@@||dxlclient.io^
+!
+! České banky (musí fungovat — internetbanking)
+@@||csas.cz^
+@@||csob.cz^
+@@||kb.cz^
+@@||fio.cz^
+@@||moneta.cz^
+@@||rb.cz^
+@@||airbank.cz^
+!
+! Crypto infra (kritické pro tvůj setup)
+@@||gnosischain.com^
+@@||gnosispay.com^
+@@||eigenlayer.xyz^
+@@||ethereum.org^
+@@||bitcoin.org^
+!
+! Heureka hlavní doména (cashback ano, reklamy ne)
+@@||heureka.cz^
+@@||heureka.sk^
+!
+! ====================================================================
+! KONEC SEZNAMU
+! ====================================================================
